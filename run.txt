@@ -1,0 +1,17 @@
+Terminal 1 (Backend API):
+
+powershell
+cd c:\Users\Naitik\Desktop\CODING\aquasensev1\aquasense-backend
+venv\Scripts\activate
+uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+
+Terminal 2 (Frontend Website):
+
+powershell
+cd c:\Users\Naitik\Desktop\CODING\aquasensev1\aquasense-frontend
+npm run dev -- --host --port 5173
+
+
+alembic revision --autogenerate -m "update database schema"
+alembic upgrade head

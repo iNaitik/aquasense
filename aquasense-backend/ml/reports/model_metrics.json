@@ -1,0 +1,35 @@
+{
+    "model_name": "Logistic Regression",
+    "training_date": "2026-07-17T12:43:08.688021Z",
+    "input_feature_names": [
+        "pipe_age_years",
+        "material",
+        "diameter_mm",
+        "length_m",
+        "previous_failures",
+        "days_since_last_maintenance",
+        "complaints_last_30_days",
+        "leakage_complaints_30d"
+    ],
+    "target_name": "failure_next_12_months",
+    "selected_classification_threshold": 0.65,
+    "test_metrics": {
+        "accuracy": 0.8087,
+        "precision": 0.3311,
+        "recall": 0.52,
+        "f1_score": 0.4046,
+        "roc_auc": 0.7899,
+        "pr_auc": 0.3634,
+        "confusion_matrix": [
+            [
+                2231,
+                394
+            ],
+            [
+                180,
+                195
+            ]
+        ]
+    },
+    "prototype_disclaimer": "The model is a prototype trained on synthetic historical data. Predicted risk scores are demonstration outputs and must not be interpreted as actual risk assessments of Indore's real water infrastructure."
+}
